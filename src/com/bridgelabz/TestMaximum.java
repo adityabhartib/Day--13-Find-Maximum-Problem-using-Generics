@@ -19,7 +19,7 @@ public class TestMaximum {
 
     public static void main(String[] args) {
         System.out.println("----!Welcome to Generic Test Maximum!-----");
-        String maxString=compareTo("Peach","Apple","Banana");
+        String maxString=compareTo("Banana","Peach","Apple");
         System.out.println("Maximum from 3 String : "+maxString);
     }
 }
