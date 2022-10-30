@@ -1,25 +1,25 @@
 package com.bridgelabz;
 
 public class TestMaximum {
-    public static Float compareTo(Float a,Float b,Float c) {
-        if(a > b){
-            if(a > c) {
-                return a;
+    public static String compareTo(String str1,String str2,String str3) {
+        if(str1.compareTo(str2) > 0 ) {
+            if(str1.compareTo(str3) > 0) {
+                return str1;
             } else {
-                return c;
+                return str3;
             }
         } else {
-            if(b > c) {
-                return b;
+            if(str2.compareTo(str3) > 0) {
+                return str2;
             } else {
-                return c;
+                return str3;
             }
         }
     }
 
     public static void main(String[] args) {
         System.out.println("----!Welcome to Generic Test Maximum!-----");
-        Float maxFloat=compareTo(10.50F,10.70F,900.60F);
-        System.out.println("Maximum from 3 Float : "+maxFloat);
+        String maxString=compareTo("Apple","Peach","Banana");
+        System.out.println("Maximum from 3 String : "+maxString);
     }
 }
