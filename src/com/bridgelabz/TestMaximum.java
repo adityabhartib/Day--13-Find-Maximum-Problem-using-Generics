@@ -32,7 +32,9 @@ public class TestMaximum<T extends Comparable<T>> {
             String stringValue1 = "Apple", stringValue2 = "Peach", stringValue3 = "Banana";
 
             new TestMaximum(intValue1, intValue2, intValue3).testMaximum();
+            System.out.println("----------------------------------------------------");
             new TestMaximum(floatValue1, floatValue2, floatValue3).testMaximum();
+            System.out.println("-------------------------------------------------------");
             new TestMaximum(stringValue1, stringValue2, stringValue3).testMaximum();
         }
     }
